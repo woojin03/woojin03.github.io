@@ -749,7 +749,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="648 단어"
+  title="573 단어"
 >
   <em>3 분</em>읽는 시간</span>
 
@@ -907,54 +907,14 @@ bundler <span class="nt">-v</span>
 
 <h2 id="7-블로그-수정-후-github에-푸시하기"><span class="me-2">7. 블로그 수정 후 GitHub에 푸시하기</span><a href="#7-블로그-수정-후-github에-푸시하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<ol>
-  <li>변경사항 확인</li>
-</ol>
-
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>git status
-</pre></td></tr></tbody></table></code></div></div>
-
-<ol>
-  <li>변경된 파일 추가</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
 </pre></td><td class="rouge-code"><pre>git add <span class="nb">.</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<ol>
-  <li>커밋 메시지 작성</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>git commit <span class="nt">-m</span> <span class="s2">"블로그 글 추가: GitHub Pages와 Jekyll로 블로그 구축 방법"</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<ol>
-  <li>원격 저장소로 푸시</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>git push origin main
-</pre></td></tr></tbody></table></code></div></div>
-
-<blockquote>
-  <p>한 줄로 요약해서 입력할 수도 있습니다:</p>
-</blockquote>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="복사되었습니다!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>git add <span class="nb">.</span> <span class="o">&amp;&amp;</span> git commit <span class="nt">-m</span> <span class="s2">"커밋 메시지"</span> <span class="o">&amp;&amp;</span> git push origin main
+git commit <span class="nt">-m</span> <span class="s2">"docs: 첫 번째 블로그 포스트 업로드"</span>
+git push origin main
 </pre></td></tr></tbody></table></code></div></div>
 
 <hr />
