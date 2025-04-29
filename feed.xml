@@ -2,29 +2,55 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://woojin03.github.io//</id>
-  <title>Chirpy</title>
-  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-04-29T17:29:00+08:00</updated>
+  <title>woojin</title>
+  <subtitle>디지털 포렌식과 모의해킹을 중심으로, 보안 분야의 다양한 경험을 차곡차곡 쌓아가는 블로그입니다.</subtitle>
+  <updated>2025-04-29T22:07:04+09:00</updated>
   <author>
-    <name>your_full_name</name>
+    <name>woojin</name>
     <uri>https://woojin03.github.io//</uri>
   </author>
   <link rel="self" type="application/atom+xml" href="https://woojin03.github.io//feed.xml"/>
-  <link rel="alternate" type="text/html" hreflang="en"
+  <link rel="alternate" type="text/html" hreflang="ko-KR"
     href="https://woojin03.github.io//"/>
   <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
-  <rights> © 2025 your_full_name </rights>
+  <rights> © 2025 woojin </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
 
   
   <entry>
+    <title>GitHub Pages와 Jekyll로 깃허브 블로그 작성 방법</title>
+    <link href="https://woojin03.github.io//posts/github-blog-start/" rel="alternate" type="text/html" title="GitHub Pages와 Jekyll로 깃허브 블로그 작성 방법" />
+    <published>2025-04-29T20:00:00+09:00</published>
+  
+    <updated>2025-04-29T20:00:00+09:00</updated>
+  
+    <id>https://woojin03.github.io//posts/github-blog-start/</id>
+    <content type="text/html" src="https://woojin03.github.io//posts/github-blog-start/" />
+    <author>
+      <name>leewoojin</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Tutorial" />
+    
+  
+
+  <summary>성실함을 기록으로 보여주기 위해, 기존에 사용하던 네이버 블로그를 정리하고 GitHub 블로그로 이전했습니다. 잔디 심기를 통해 하루하루의 노력을 쌓아가는 모습을 남기고자 합니다.  처음 구축하는 과정에서 쥔장이 직접 많이 헤맸던 부분들만 간단하게 정리해두었습니다.    1. 테마를 GitHub Fork 기능으로 가져옵니다.     GitHub에서 원하는 테마(저는 Chirpy)를 찾아 Fork 버튼을 누릅니다.   내 계정에 username.github.io 형식의 저장소를 새로 만듭니다.   (주의: 저장소 이름이 반드시 username.github.io 형태여야 합니다.)    2. 저장소를 로컬로 복제합니다.  git clone https://github.com/내아이디/내아이디.github.i...</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>Customize the Favicon</title>
     <link href="https://woojin03.github.io//posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
-    <published>2019-08-11T00:34:00+08:00</published>
+    <published>2019-08-11T01:34:00+09:00</published>
   
-    <updated>2019-08-11T00:34:00+08:00</updated>
+    <updated>2019-08-11T01:34:00+09:00</updated>
   
     <id>https://woojin03.github.io//posts/customize-the-favicon/</id>
     <content type="text/html" src="https://woojin03.github.io//posts/customize-the-favicon/" />
@@ -41,84 +67,6 @@
   
 
   <summary>The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.  Generate the favicon  Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Getting Started</title>
-    <link href="https://woojin03.github.io//posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
-    <published>2019-08-09T20:55:00+08:00</published>
-  
-    <updated>2019-08-09T20:55:00+08:00</updated>
-  
-    <id>https://woojin03.github.io//posts/getting-started/</id>
-    <content type="text/html" src="https://woojin03.github.io//posts/getting-started/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  <summary>Get started with Chirpy basics in this comprehensive overview. You will learn how to install, configure, and use your first Chirpy-based website, as well as deploy it to a web server.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Writing a New Post</title>
-    <link href="https://woojin03.github.io//posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
-    <published>2019-08-08T14:10:00+08:00</published>
-  
-    <updated>2019-08-08T14:10:00+08:00</updated>
-  
-    <id>https://woojin03.github.io//posts/write-a-new-post/</id>
-    <content type="text/html" src="https://woojin03.github.io//posts/write-a-new-post/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  <summary>This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.  Naming and Path  Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to save time of cre...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Text and Typography</title>
-    <link href="https://woojin03.github.io//posts/text-and-typography/" rel="alternate" type="text/html" title="Text and Typography" />
-    <published>2019-08-08T11:33:00+08:00</published>
-  
-    <updated>2019-08-08T11:33:00+08:00</updated>
-  
-    <id>https://woojin03.github.io//posts/text-and-typography/</id>
-    <content type="text/html" src="https://woojin03.github.io//posts/text-and-typography/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Demo" />
-    
-  
-
-  <summary>Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.</summary>
 
   </entry>
 
