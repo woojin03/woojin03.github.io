@@ -1,9 +1,10 @@
 ---
+layout: post
 title: 모의해킹 스터디 4주차 게시판 만들기 
 author: leewoojin
-date: 2025-04-30
+date: 2025-04-30 00:00:00 +0900
 categories: [Pentest, W4]
-tags: [board, sql, Pentest ]
+tags: [board, sql, Pentest]
 ---
 이번 주차에서는 1~3주차 동안 구현한 웹페이지에 게시판 기능을 추가해보겠습니다.  
 
