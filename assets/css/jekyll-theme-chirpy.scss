@@ -8,3 +8,8 @@
 ';
 
 /* append your custom style below */
+
+details.code-toggle pre {
+  background-color: #2d2d2d;  // 다크 모드 전용이라면 추천
+  color: #f8f8f2;             // 밝은 폰트
+}
