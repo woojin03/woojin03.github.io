@@ -4,7 +4,7 @@
   <id>https://woojin03.github.io//</id>
   <title>woojin</title>
   <subtitle>디지털 포렌식과 모의해킹을 중심으로, 보안 분야의 다양한 경험을 차곡차곡 쌓아가는 블로그입니다.</subtitle>
-  <updated>2025-04-29T22:50:28+09:00</updated>
+  <updated>2025-04-30T18:10:00+09:00</updated>
   <author>
     <name>woojin</name>
     <uri>https://woojin03.github.io//</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>모의해킹 스터디 4주차 게시판 만들기</title>
+    <link href="https://woojin03.github.io//posts/Penetration-Test-Study-4week(board)/" rel="alternate" type="text/html" title="모의해킹 스터디 4주차 게시판 만들기" />
+    <published>2025-04-30T00:00:00+09:00</published>
+  
+    <updated>2025-04-30T00:00:00+09:00</updated>
+  
+    <id>https://woojin03.github.io//posts/Penetration-Test-Study-4week(board)/</id>
+    <content type="text/html" src="https://woojin03.github.io//posts/Penetration-Test-Study-4week(board)/" />
+    <author>
+      <name>leewoojin</name>
+    </author>
+
+  
+    
+    <category term="Pentest" />
+    
+    <category term="W4" />
+    
+  
+
+  <summary>이번 주차에서는 1~3주차 동안 구현한 웹페이지에 게시판 기능을 추가해보겠습니다.  1.유저 게시판 테이블 설계  CREATE TABLE user_board (   id INT AUTO_INCREMENT PRIMARY KEY,   title VARCHAR(255) NOT NULL,   content TEXT NOT NULL,   author VARCHAR(50) NOT NULL,   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,   views INT DEFAULT 0 );    2. 게시판 목록    &amp;amp;lt;table class=&amp;quot;table table-hover text-center&amp;quot;&amp;amp;gt;   &amp;amp;lt;thead class=&amp;quot;table-light&amp;quot;&amp;amp;gt;     &amp;amp;...</summary>
+
+  </entry>
 
   
   <entry>
@@ -41,32 +67,6 @@
   
 
   <summary>성실함을 기록으로 보여주기 위해, 기존에 사용하던 네이버 블로그를 정리하고 GitHub 블로그로 이전했습니다. 잔디 심기를 통해 하루하루의 노력을 쌓아가는 모습을 남기고자 합니다.  처음 구축하는 과정에서 쥔장이 직접 많이 헤맸던 부분들만 간단하게 정리해두었습니다.    1. 테마를 GitHub Fork 기능으로 가져옵니다.     GitHub에서 원하는 테마(저는 Chirpy)를 찾아 Fork 버튼을 누릅니다.   내 계정에 username.github.io 형식의 저장소를 새로 만듭니다.   (주의: 저장소 이름이 반드시 username.github.io 형태여야 합니다.)    2. 저장소를 로컬로 복제합니다.  git clone https://github.com/내아이디/내아이디.github.i...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Customize the Favicon</title>
-    <link href="https://woojin03.github.io//posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
-    <published>2019-08-11T01:34:00+09:00</published>
-  
-    <updated>2019-08-11T01:34:00+09:00</updated>
-  
-    <id>https://woojin03.github.io//posts/customize-the-favicon/</id>
-    <content type="text/html" src="https://woojin03.github.io//posts/customize-the-favicon/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  <summary>The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.  Generate the favicon  Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...</summary>
 
   </entry>
 

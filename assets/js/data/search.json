@@ -1,19 +1,19 @@
 [
   {
+    "title": "모의해킹 스터디 4주차 게시판 만들기",
+    "url": "/posts/Penetration-Test-Study-4week(board)/",
+    "categories": "Pentest, W4",
+    "tags": "board, sql, Pentest",
+    "date": "2025-04-30 00:00:00 +0900",
+    "content": "이번 주차에서는 1~3주차 동안 구현한 웹페이지에 게시판 기능을 추가해보겠습니다.  1.유저 게시판 테이블 설계  CREATE TABLE user_board (   id INT AUTO_INCREMENT PRIMARY KEY,   title VARCHAR(255) NOT NULL,   content TEXT NOT NULL,   author VARCH..."
+  },
+  {
     "title": "GitHub Pages와 Jekyll로 깃허브 블로그 작성 방법",
     "url": "/posts/github-blog-start/",
     "categories": "Blogging, Tutorial",
     "tags": "GitHub Pages, Jekyll, blog",
     "date": "2025-04-29 20:00:00 +0900",
     "content": "성실함을 기록으로 보여주기 위해, 기존에 사용하던 네이버 블로그를 정리하고 GitHub 블로그로 이전했습니다. 잔디 심기를 통해 하루하루의 노력을 쌓아가는 모습을 남기고자 합니다.  처음 구축하는 과정에서 쥔장이 직접 많이 헤맸던 부분들만 간단하게 정리해두었습니다.    1. 테마를 GitHub Fork 기능으로 가져옵니다.     GitHub에서 원..."
-  },
-  {
-    "title": "Customize the Favicon",
-    "url": "/posts/customize-the-favicon/",
-    "categories": "Blogging, Tutorial",
-    "tags": "favicon",
-    "date": "2019-08-11 01:34:00 +0900",
-    "content": "The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons..."
   }
   
 ]
