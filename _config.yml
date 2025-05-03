@@ -98,7 +98,7 @@ theme_mode: # [light | dark]
 # cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/img/favicons/profile.png"
+avatar: "/assets/img/favicons/profile3.png"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -112,8 +112,8 @@ comments:
   giscus:
     repo: woojin03/woojin03.github.io
     repo_id: R_kgDOOhC6vA
-    category: 일반  # GitHub Discussions의 카테고리 이름 (예: "General", "일반")
-    category_id: DIC_kwDOOhC6vM4CavJj  # ← 이건 실제 GitHub에서 복사한 카테고리 ID여야 함
+    category: General
+    category_id: DIC_kwDOOhC6vM4CavJj
     mapping: pathname
     strict: 0
     reactions_enabled: 1
@@ -121,7 +121,6 @@ comments:
     input_position: bottom
     theme: preferred_color_scheme
     lang: ko
-
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
