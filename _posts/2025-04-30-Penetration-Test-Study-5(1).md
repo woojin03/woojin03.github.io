@@ -158,5 +158,4 @@ for i in range(10000):
         break
     else:
         print(f"[-] 시도 중: {otp}", end="\r")
-
 ```
