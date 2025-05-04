@@ -1,5 +1,13 @@
 [
   {
+    "title": "모의해킹 스터디 5주차 CTF 문제 분석 및 구현",
+    "url": "/posts/Penetration-Test-Study-5(2)/",
+    "categories": "Pentest, W5",
+    "tags": "SQLi, 로그인우회, CTF, 웹보안",
+    "date": "2025-05-03 00:00:00 +0900",
+    "content": "⚠️ 본 실습 콘텐츠는 노말틱님의 해킹 스터디 CTF 문제를 기반으로 재구성하였으며, 학습 및 교육 목적에 한해 사용됩니다.   이번 글에서는 해당 문제를 분석하고, 동일한 취약점을 기반으로 문제를 직접 구현해봄으로써,  SQL Injection이 로그인 로직에 어떻게 적용되고 동작하는지를 내부 구조 수준에서 심층적으로 이해하고자 합니다.    메인 ..."
+  },
+  {
     "title": "모의해킹 스터디 5주차 CTF 문제 풀기",
     "url": "/posts/Penetration-Test-Study-5(1)/",
     "categories": "Pentest, W5",
