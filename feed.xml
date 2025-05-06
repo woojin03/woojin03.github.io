@@ -4,7 +4,7 @@
   <id>https://woojin03.github.io//</id>
   <title>woojin</title>
   <subtitle>디지털 포렌식과 모의해킹을 중심으로, 보안 분야의 다양한 경험을 차곡차곡 쌓아가는 블로그입니다.</subtitle>
-  <updated>2025-05-05T17:18:32+09:00</updated>
+  <updated>2025-05-06T14:12:57+09:00</updated>
   <author>
     <name>woojin</name>
     <uri>https://woojin03.github.io//</uri>
@@ -22,9 +22,9 @@
   <entry>
     <title>모의해킹 스터디 5주차 CTF 문제 분석 및 구현</title>
     <link href="https://woojin03.github.io//posts/Penetration-Test-Study-5(2)/" rel="alternate" type="text/html" title="모의해킹 스터디 5주차 CTF 문제 분석 및 구현" />
-    <published>2025-05-03T00:00:00+09:00</published>
+    <published>2025-05-06T00:00:00+09:00</published>
   
-    <updated>2025-05-03T00:00:00+09:00</updated>
+    <updated>2025-05-06T00:00:00+09:00</updated>
   
     <id>https://woojin03.github.io//posts/Penetration-Test-Study-5(2)/</id>
     <content type="text/html" src="https://woojin03.github.io//posts/Penetration-Test-Study-5(2)/" />
@@ -40,7 +40,7 @@
     
   
 
-  <summary>⚠️ 본 실습 콘텐츠는 노말틱님의 해킹 스터디 CTF 문제를 기반으로 재구성하였으며, 학습 및 교육 목적에 한해 사용됩니다.   이번 글에서는 해당 문제를 분석하고, 동일한 취약점을 기반으로 문제를 직접 구현해봄으로써,  SQL Injection이 로그인 로직에 어떻게 적용되고 동작하는지를 내부 구조 수준에서 심층적으로 이해하고자 합니다.    메인 페이지  1~3주차 학습 내용을 기반으로, ChatGPT와 함께 CTF 메인 화면을 구현해봤습니다.       🔐 Login Bypass 1  이 문제에서는 OR 허용, 주석 차단, 그리고 식별/인증을 동시에 만족시키는 조건을 우회하는 문제입니다.  ✅  로그인 로직  이번 문제의 로그인 로직은 다음과 같이 구성되어 있습니다:  $sql = &amp;quot;SELECT ...</summary>
+  <summary>⚠️ 본 실습 콘텐츠는 노말틱님의 해킹 스터디 CTF 문제를 기반으로 재구성하였으며, 학습 및 교육 목적에 한해 사용됩니다.   이번 글에서는 해당 문제를 분석하고, 동일한 취약점을 활용한 CTF 문제를 직접 구현해 봄으로써, SQL Injection이 로그인 로직에 어떻게 적용되고 동작하는지를 내부 구조 수준에서 심층적으로 이해하고자 합니다.  이 글은 총 3일에 걸쳐 작업한 내용을 기반으로 정리되었습니다.  📥 문제 다운로드 안내 문제 실행 및 설치 방법은 아래 GitHub 저장소의 README.md 파일에 정리되어 있습니다:  👉 https://github.com/woojin03/normaltic-penstudy/tree/ctf  메인 페이지  1~3주차 학습 내용을 기반으로, ChatGPT와 함...</summary>
 
   </entry>
 
