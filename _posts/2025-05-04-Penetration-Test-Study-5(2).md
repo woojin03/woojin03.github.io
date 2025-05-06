@@ -1,18 +1,21 @@
 ---
 title: 모의해킹 스터디 5주차 CTF 문제 분석 및 구현
 author: leewoojin
-date: 2025-05-03 00:00:00 +0900
+date: 2025-05-06 00:00:00 +0900
 categories: [Pentest, W5]
 tags: [SQLi, 로그인우회, CTF, 웹보안]
 ---
 
 > ⚠️ *본 실습 콘텐츠는 노말틱님의 해킹 스터디 CTF 문제를 기반으로 재구성하였으며, 학습 및 교육 목적에 한해 사용됩니다.*
 
-이번 글에서는 해당 문제를 분석하고, 동일한 취약점을 기반으로 문제를 직접 구현해봄으로써, 
+이번 글에서는 해당 문제를 분석하고, 동일한 취약점을 활용한 CTF 문제를 직접 구현해 봄으로써, SQL Injection이 로그인 로직에 어떻게 적용되고 동작하는지를 내부 구조 수준에서 심층적으로 이해하고자 합니다.
 
-**SQL Injection이 로그인 로직에 어떻게 적용되고 동작하는지를 내부 구조 수준에서 심층적으로 이해**하고자 합니다.
+이 글은 총 3일에 걸쳐 작업한 내용을 기반으로 정리되었습니다.
 
----
+## 📥 문제 다운로드 안내
+문제 실행 및 설치 방법은 아래 GitHub 저장소의 README.md 파일에 정리되어 있습니다:
+
+👉 https://github.com/woojin03/normaltic-penstudy/tree/ctf
 
 ##  메인 페이지
 
@@ -219,20 +222,74 @@ Burp 기준: 로그인 후의 인증 요청을 Repeater로 보내고, Cookie 값
 
 ### ✅ 로그인 로직
 
+` 인증 흐름`
+```
+[1] 사용자가 아이디와 비밀번호를 입력 
+[2] 클라이언트가 POST /submit.php로 전송 
+[3] 서버에서 DB 검증 후 JSON 응답 (ok 또는 fail) 
+[4] 클라이언트는 응답을 기반으로 페이지 이동 결정
+```
+
+` 로그인 처리 로직`
+
 ```php
+header('Content-Type: application/json');
+include __DIR__ . '/../../db_conn.php';
+
+$id = $_POST['id'] ?? '';
+$pw = $_POST['pw'] ?? '';
+
+$response = [
+    'result' => 'fail',
+    'id' => null,
+    'flag' => null
+];
+
+// Prepared Statement로 SQL Injection 방지
+$stmt = $conn->prepare("SELECT * FROM ctf_users1 WHERE id = ? AND pass = ?");
+$stmt->bind_param("ss", $id, $pw);
+$stmt->execute();
+$result = $stmt->get_result();
+$row = $result->fetch_assoc();
+
 if ($row) {
-    $response['result'] = "ok";
+    $response['result'] = 'ok';
+    $response['id'] = $row['id'];
 
     if ($row['id'] === 'admin') {
-        $response['flag'] = "flag{}";
+        $response['flag'] = 'flag{response_tampered_ok}';
     }
-} else {
-    $response['result'] = "fail";
 }
+
+echo json_encode($response);
+exit;
 ```
 > 서버는 POST /submit.php 요청으로 로그인 정보를 받아, 인증 성공 시 JSON 형태로 "result": "ok"을 응답합니다.
 
+` 클라이언트 로직 (index.php)`
+```php
+document.getElementById('loginForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const formData = new FormData(this);
+
+  const res = await fetch('/challenges/challenge7/submit.php', {
+    method: 'POST',
+    body: formData
+  });
+
+  const data = await res.json();
+
+  if (data.result === 'ok') {
+    window.location.href = 'submit_html.php?id=' + encodeURIComponent(data.id || '');
+  } else {
+    alert('❌ 로그인 실패');
+  }
+});
+```
+
 ### ✅ 우회 입력 예시
+
+<table> <tr> <td align="center"> <img src="https://github.com/user-attachments/assets/6c7e3e31-00d6-401d-91d8-99b98cf53321" width="400"/><br> <sub>로그인 화면</sub> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/59ee4b44-5bb7-4e42-8356-6ac63ad498e8" width="400"/><br> <sub>result: fail → ok (응답 조작)</sub> </td> </tr> <tr> <td align="center"> <img src="https://github.com/user-attachments/assets/57680336-55ae-4b5f-b0fb-ec03b6b014d7" width="400"/><br> <sub>id: undefined → admin 조작</sub> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/73060247-6c70-433e-8fa7-48d911da32de" width="400"/><br> <sub>🎉 FLAG 획득 성공</sub> </td> </tr> </table>
 
 - **정상 계정 세션 재사용**:  
   `guest` 계정으로 로그인하여 받은 인증 패킷(`{"result":"ok"}`)을 저장해두었다가, `admin` 계정으로 로그인 시 인증에 실패하면,  
@@ -240,13 +297,6 @@ if ($row) {
 
 - **응답 위조**:  
   `admin` 계정으로 로그인하여 실패 응답(`{"result":"fail"}`)을 받은 후, **BurpSuite에서 응답 내용을 `{"result":"ok"}`로 수정**하여, 클라이언트 측에서 **인증에 성공한 것처럼 동작**하게 합니다.
-
-### ✅  실습 문제
- BurpSuite와 가상머신 간 네트워크 연결 문제
-
-- 로컬 환경의 BurpSuite는 일반적으로 `127.0.0.1:8080`에서 프록시를 바인딩하고 대기합니다.
-- 하지만 가상머신에서 실행 중인 웹 애플리케이션이 `localhost` (`127.0.0.1`) 기준으로만 실행되면,
-  **해당 요청은 가상머신 내부에서만 처리되며, 호스트(로컬)에서 실행 중인 BurpSuite에서는 관찰할 수 없습니다.**
 
 ## 🔐 PIN CODE Bypass
 이 문제는 **페이지 간 이동 흐름을 활용한 CTF 문제**입니다.  
@@ -282,12 +332,16 @@ if ($row) {
 - BurpSuite나 Python `requests`를 활용해 자동화 공격이 가능합니다.
 
 
-## 트러블 슈팅 (질문) 
+## 🛠️ 트러블슈팅 및 질문 정리
 
-### 🔸 1. 문제 유사성 관련 질문
-- **Get Admin** 문제와 **Login Bypass 5** 문제는 풀이 방식이 동일한 것으로 보입니다. 두 문제의 차이점이 무엇인지 알고 싶습니다.
+### 1. 문제 유사성 관련 질문
 
-### 🔸 2. 로그인 우회 로직 작성 방식
+- **Get Admin** 문제와 **Login Bypass 5** 문제는 풀이 방식이 동일한 것으로 보입니다.  
+  두 문제의 차이점이 무엇인지 알고 싶습니다.
+
+
+### 2. 로그인 우회 로직 작성 방식
+
 - **Login Bypass 1** 문제를 구현하며 다음과 같은 로그인 로직을 작성했는데, 보안상 적절한 구현 방식인지 궁금합니다:
 
 ```php
@@ -295,13 +349,19 @@ if (preg_match("/--|#|\/\*/i", $id)) {
     $row = false; // 강제로 로그인 실패 처리
 } else {
     $sql = "SELECT * FROM ctf_users1 WHERE id='$id' AND pass='$pw'";
-    $result = mysqli_query($conn, $sql);
-    $row = mysqli_fetch_array($result);
 }
 ```
-정규표현식으로 SQL 인젝션을 일부 막는 방식인데, 이 접근이 안전한지, 더 나은 방식이 있는지 궁금합니다.
+### 3. 브루트포스 자동화 중 이상 현상
+- 가상환경에서 Pin Code Crack 문제를 풀기 위해 작성한 Python 코드에서 Found PIN: 0000 이 출력되며,실제 플래그는 잘 출력되지만 PIN이 고정된 값처럼 나오는 문제가 있습니다.  
 
-### 🔸 3. 브루트포스 자동화 중 이상 현상
-Pin Code Crack 문제를 풀기 위해 작성한 브루트포스 Python 코드에서 Found PIN: 0000 이 출력되며, 실제 플래그는 잘 출력되지만 PIN이 고정된 값처럼 나오는 문제가 있습니다.
+### 4. BurpSuite와 가상머신 간 네트워크 연결 문제
+- `문제` 실제로 다른 외부 페이지 요청은 Burp에서 정상적으로 잡히는데,
+문제 프로젝트(localhost 페이지)만 유독 Burp에서 관찰되지 않는 현상이 발생했습니다.
+-  `해결 방법`
+BurpSuite가 트래픽을 감지하지 못해 디버깅이 불가능했기 때문에,
+프로젝트를 GitHub에 업로드한 뒤 로컬 환경으로 옮겨 재구성했습니다.
 
-매 요청마다 증가하면서 시도는 되지만 출력은 항상 0000이 나옵니다. 원인이 클라이언트 캐시인지, 응답 처리 로직 때문인지 확인 필요합니다.
+### 5. 가장 제작이 까다로웠던 문제: Admin is Mine
+JSON 응답 기반의 문제이기 때문에 브라우저에서는 result: ok 응답을 확인할 수 없었는데 처음엔 서버 오류로 오해했으나, 실제로는 BurpSuite 설정이 잘못되어 응답이 보이지 않았던 것이 원인이었습니다. 
+
+
