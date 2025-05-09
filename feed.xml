@@ -4,7 +4,7 @@
   <id>https://woojin03.github.io//</id>
   <title>woojin</title>
   <subtitle>디지털 포렌식과 모의해킹을 중심으로, 보안 분야의 다양한 경험을 차곡차곡 쌓아가는 블로그입니다.</subtitle>
-  <updated>2025-05-06T14:12:57+09:00</updated>
+  <updated>2025-05-09T12:06:47+09:00</updated>
   <author>
     <name>woojin</name>
     <uri>https://woojin03.github.io//</uri>
@@ -17,6 +17,54 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Penetration Test Study 6(1)</title>
+    <link href="https://woojin03.github.io//posts/Penetration-Test-Study-6(1)/" rel="alternate" type="text/html" title="Penetration Test Study 6(1)" />
+    <published>2025-05-09T00:00:00+09:00</published>
+  
+    <updated>2025-05-09T00:00:00+09:00</updated>
+  
+    <id>https://woojin03.github.io//posts/Penetration-Test-Study-6(1)/</id>
+    <content type="text/html" src="https://woojin03.github.io//posts/Penetration-Test-Study-6(1)/" />
+    <author>
+      <name>woojin</name>
+    </author>
+
+  
+    
+  
+
+  <summary>해당 문제는 게시판의 search 파라미터에서 SQL Injection을 통해 숨겨진 데이터(flag) 를 추출하는 문제였습니다.  사전에 PortSwigger Labs에서 SQLi를 학습했기 때문에 쉽게 접근할 수 있을 줄 알았는데, 생각보다 고전했습니다.    🧪 시도 과정 및 풀이  🎯 시도 1 – SQL Injection이 가능한가? normaltic&amp;#39; OR &amp;#39;1&amp;#39;=&amp;#39;1--    ✅ SQL 인젝션 성공 확인    🎯 시도 2 – 컬럼 수 확인 normaltic&amp;#39; ORDER BY 1 --    ✅ 성공   normaltic&amp;#39; ORDER BY 5 --    ❌ 실패  ✅ 컬럼 수는 4개로 추정됨  🎯 시도 3 – 출력 컬럼 식별 normaltic&amp;#39; UNION SELECT 1,2,3,4 --   ✅ ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>LLaMA3 기반 디지털포렌식 아티팩트 분석기 개발 (1)</title>
+    <link href="https://woojin03.github.io//posts/llama3_digital_forensics(1)/" rel="alternate" type="text/html" title="LLaMA3 기반 디지털포렌식 아티팩트 분석기 개발 (1)" />
+    <published>2025-05-07T00:00:00+09:00</published>
+  
+    <updated>2025-05-07T00:00:00+09:00</updated>
+  
+    <id>https://woojin03.github.io//posts/llama3_digital_forensics(1)/</id>
+    <content type="text/html" src="https://woojin03.github.io//posts/llama3_digital_forensics(1)/" />
+    <author>
+      <name>leewoojin</name>
+    </author>
+
+  
+    
+    <category term="Forensics" />
+    
+    <category term="LLaMA3" />
+    
+  
+
+  <summary>1. 파일 다운로드  개인 컴퓨터 사양에 맞는 파일을 아래 사이트에서 다운로드합니다.  🔗 https://ollama.com/download    2. 다운로드한 파일 실행  설치 파일을 실행하면 아래와 같은 화면이 순서대로 나타납니다.                                        3. LLaMA3 모델 실행  설치가 완료되면, 터미널에서 아래 명령어를 복사하여 붙여넣고 실행합니다: ollama run llama3     llama3.2와 같은 최신 버전 사용을 권장하지만, 저는 추후 Google Colab과 연동할 계획이 있어 기본 llama3 모델을 설치해 사용했습니다.</summary>
+
+  </entry>
 
   
   <entry>
@@ -72,14 +120,14 @@
 
   
   <entry>
-    <title>모의해킹 스터디 4주차 게시판 만들기</title>
-    <link href="https://woojin03.github.io//posts/Penetration-Test-Study-4week(board)/" rel="alternate" type="text/html" title="모의해킹 스터디 4주차 게시판 만들기" />
+    <title>모의해킹 스터디 5주차 SQLi 학습</title>
+    <link href="https://woojin03.github.io//posts/Penetration-Test-Study-5(3)/" rel="alternate" type="text/html" title="모의해킹 스터디 5주차 SQLi 학습" />
     <published>2025-04-30T00:00:00+09:00</published>
   
     <updated>2025-04-30T00:00:00+09:00</updated>
   
-    <id>https://woojin03.github.io//posts/Penetration-Test-Study-4week(board)/</id>
-    <content type="text/html" src="https://woojin03.github.io//posts/Penetration-Test-Study-4week(board)/" />
+    <id>https://woojin03.github.io//posts/Penetration-Test-Study-5(3)/</id>
+    <content type="text/html" src="https://woojin03.github.io//posts/Penetration-Test-Study-5(3)/" />
     <author>
       <name>leewoojin</name>
     </author>
@@ -92,33 +140,7 @@
     
   
 
-  <summary>이번 주차에서는 1~3주차 동안 구현한 웹페이지에 게시판 기능을 추가해보겠습니다.  1.유저 게시판 테이블 설계  CREATE TABLE user_board (   id INT AUTO_INCREMENT PRIMARY KEY,   title VARCHAR(255) NOT NULL,   content TEXT NOT NULL,   author VARCHAR(50) NOT NULL,   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,   views INT DEFAULT 0 );    2. 게시판 목록    &amp;amp;lt;table class=&amp;quot;table table-hover text-center&amp;quot;&amp;amp;gt;   &amp;amp;lt;thead class=&amp;quot;table-light&amp;quot;&amp;amp;gt;     &amp;amp;...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>GitHub Pages와 Jekyll로 깃허브 블로그 작성 방법</title>
-    <link href="https://woojin03.github.io//posts/github-blog-start/" rel="alternate" type="text/html" title="GitHub Pages와 Jekyll로 깃허브 블로그 작성 방법" />
-    <published>2025-04-29T20:00:00+09:00</published>
-  
-    <updated>2025-04-29T20:00:00+09:00</updated>
-  
-    <id>https://woojin03.github.io//posts/github-blog-start/</id>
-    <content type="text/html" src="https://woojin03.github.io//posts/github-blog-start/" />
-    <author>
-      <name>leewoojin</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  <summary>성실함을 기록으로 보여주기 위해, 기존에 사용하던 네이버 블로그를 정리하고 GitHub 블로그로 이전했습니다. 잔디 심기를 통해 하루하루의 노력을 쌓아가는 모습을 남기고자 합니다.  처음 구축하는 과정에서 쥔장이 직접 많이 헤맸던 부분들만 간단하게 정리해두었습니다.    1. 테마를 GitHub Fork 기능으로 가져옵니다.     GitHub에서 원하는 테마(저는 Chirpy)를 찾아 Fork 버튼을 누릅니다.   내 계정에 username.github.io 형식의 저장소를 새로 만듭니다.   (주의: 저장소 이름이 반드시 username.github.io 형태여야 합니다.)    2. 저장소를 로컬로 복제합니다.  git clone https://github.com/내아이디/내아이디.github.i...</summary>
+  <summary>이 포스팅은 PortSwigger Web Security Academy의 SQL Injection 학습 경로를 기반으로 작성되었습니다.   SQL 인젝션(SQLi)이란?     SQL 인젝션은 웹 보안 취약점으로, 공격자가 데이터베이스 쿼리를 방해하여 사용자 데이터를 접근하거나 수정할 수 있는 방법입니다.   공격자는 SQL 쿼리를 조작하여 모든 제품을 표시하거나 비밀번호 검사를 우회하여 다른 계정에 로그인할 수 있습니다.   SQL 인젝션 취약점을 탐지하기 위해 데이터베이스 정보를 수집하고, 블라인드 SQL 인젝션과 같은 복잡한 접근 방법이 필요합니다.   이를 예방하기 위해서는 매개변수화된 쿼리를 사용하여 사용자 입력이 쿼리 구조에 영향을 미치지 않도록 해야 합니다.   SQL 주입 취약점은 어떻게...</summary>
 
   </entry>
 

@@ -1,5 +1,21 @@
 [
   {
+    "title": "Penetration Test Study 6(1)",
+    "url": "/posts/Penetration-Test-Study-6(1)/",
+    "categories": "",
+    "tags": "",
+    "date": "2025-05-09 00:00:00 +0900",
+    "content": "해당 문제는 게시판의 search 파라미터에서 SQL Injection을 통해 숨겨진 데이터(flag) 를 추출하는 문제였습니다.  사전에 PortSwigger Labs에서 SQLi를 학습했기 때문에 쉽게 접근할 수 있을 줄 알았는데, 생각보다 고전했습니다.    🧪 시도 과정 및 풀이  🎯 시도 1 – SQL Injection이 가능한가? norma..."
+  },
+  {
+    "title": "LLaMA3 기반 디지털포렌식 아티팩트 분석기 개발 (1)",
+    "url": "/posts/llama3_digital_forensics(1)/",
+    "categories": "Forensics, LLaMA3",
+    "tags": "llm, llama3, forensic, automation, artifact",
+    "date": "2025-05-07 00:00:00 +0900",
+    "content": "1. 파일 다운로드  개인 컴퓨터 사양에 맞는 파일을 아래 사이트에서 다운로드합니다.  🔗 https://ollama.com/download    2. 다운로드한 파일 실행  설치 파일을 실행하면 아래와 같은 화면이 순서대로 나타납니다.                                        3. LLaMA3 모델 실행  설치가 완료되면..."
+  },
+  {
     "title": "모의해킹 스터디 5주차 CTF 문제 분석 및 구현",
     "url": "/posts/Penetration-Test-Study-5(2)/",
     "categories": "Pentest, W5",
@@ -14,6 +30,14 @@
     "tags": "",
     "date": "2025-05-03 00:00:00 +0900",
     "content": "과제 1. 오늘 배운거 복습 하기 (로그인 우회, 세션 탈취 등) 2. 인증 우회 실습 문제 풀기 (라이트업) + 문제와 비슷한 환경 구성해보기    CTF Login Bypass 1  해당 페이지에 들어가 보면 일반 로그인 화면과 유사하게 생긴 것을 확인할 수 있습니다. 강의와 같이 다음과 같은 인젝션을 사용하여 로그인 우회가 가능했습니다      ..."
+  },
+  {
+    "title": "모의해킹 스터디 5주차 SQLi 학습",
+    "url": "/posts/Penetration-Test-Study-5(3)/",
+    "categories": "Pentest, W4",
+    "tags": "board, sql, Pentest",
+    "date": "2025-04-30 00:00:00 +0900",
+    "content": "이 포스팅은 PortSwigger Web Security Academy의 SQL Injection 학습 경로를 기반으로 작성되었습니다.   SQL 인젝션(SQLi)이란?     SQL 인젝션은 웹 보안 취약점으로, 공격자가 데이터베이스 쿼리를 방해하여 사용자 데이터를 접근하거나 수정할 수 있는 방법입니다.   공격자는 SQL 쿼리를 조작하여 모든 제품..."
   },
   {
     "title": "모의해킹 스터디 4주차 게시판 만들기",
