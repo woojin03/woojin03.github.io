@@ -4,7 +4,7 @@
   <id>https://woojin03.github.io//</id>
   <title>woojin</title>
   <subtitle>디지털 포렌식과 모의해킹을 중심으로, 보안 분야의 다양한 경험을 차곡차곡 쌓아가는 블로그입니다.</subtitle>
-  <updated>2025-05-09T12:11:11+09:00</updated>
+  <updated>2025-05-10T17:53:34+09:00</updated>
   <author>
     <name>woojin</name>
     <uri>https://woojin03.github.io//</uri>
@@ -20,8 +20,86 @@
 
   
   <entry>
-    <title>Penetration Test Study 6(1)</title>
-    <link href="https://woojin03.github.io//posts/Penetration-Test-Study-6(1)/" rel="alternate" type="text/html" title="Penetration Test Study 6(1)" />
+    <title>노말틱 모의해킹 스터디 6주차 CTF 문제 (2)</title>
+    <link href="https://woojin03.github.io//posts/SQLD(1)/" rel="alternate" type="text/html" title="노말틱 모의해킹 스터디 6주차 CTF 문제 (2)" />
+    <published>2025-05-09T00:00:00+09:00</published>
+  
+    <updated>2025-05-09T00:00:00+09:00</updated>
+  
+    <id>https://woojin03.github.io//posts/SQLD(1)/</id>
+    <content type="text/html" src="https://woojin03.github.io//posts/SQLD(1)/" />
+    <author>
+      <name>leewoojin</name>
+    </author>
+
+  
+    
+    <category term="자격증" />
+    
+    <category term="SQLD" />
+    
+  
+
+  <summary>60점 이상이 통과라는데.. 오답할게 많네..  1과목  3번 문제 다음 중 정보시스템을 모델링할 때 세 가지 관점에 해당하지 않는 것은?  ① 업무에서 처리하는 일의 방법에 따라 데이터가 어떻게 영향을 받는지 분석  ② 업무를 처리할 수 있는 프로그램 구성을 어떻게 해야 하는지 분석  ③ 업무에서 실제로 하는 일은 무엇인지 또는 무엇을 해야 하는지 분석  ④ 업무가 어떤 데이터와 관련이 있는지 분석      ✅ 정답       **정답: ②**     ②번은 &amp;quot;프로그램을 어떻게 구성할까?&amp;quot;, 즉 구현을 어떻게 할지에 관한 질문이므로 모델링 관점이 아닌 설계·개발 단계의 문제입니다.   정보시스템 모델링의 3가지 관점                 관점       설명                    ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>SKT 유심 해킹 사고와 SIM 스와핑 대응 전략</title>
+    <link href="https://woojin03.github.io//posts/SKT-SIM-Swapping/" rel="alternate" type="text/html" title="SKT 유심 해킹 사고와 SIM 스와핑 대응 전략" />
+    <published>2025-05-09T00:00:00+09:00</published>
+  
+    <updated>2025-05-09T00:00:00+09:00</updated>
+  
+    <id>https://woojin03.github.io//posts/SKT-SIM-Swapping/</id>
+    <content type="text/html" src="https://woojin03.github.io//posts/SKT-SIM-Swapping/" />
+    <author>
+      <name>leewoojin</name>
+    </author>
+
+  
+    
+    <category term="보안분석" />
+    
+    <category term="모바일포렌식" />
+    
+  
+
+  <summary>참고 영상 : https://www.youtube.com/watch?v=lyrAhNFDH3w  참고 사이트 : https://www.boannews.com/media/view.asp?idx=137098&amp;amp;amp;kind=1  [ SKT 해킹 사태 ]  2025년 4월 19일, SK텔레콤의 내부 시스템이 해커의 악성코드 공격을 받아 약 2,500만 명에 달하는 가입자의 유심(USIM) 관련 정보 일부가 유출되는 대규모 해킹 사고가 발생했습니다.    유출된 정보는 유심(USIM) 관련 데이터로, 정확한 항목과 범위는 조사 중입니다. SK텔레콤 측은 주민등록번호, 생년월일, 결제 계좌번호 등 주요 개인정보는 별도의 시스템에 분산 보관되어 있어 이번 해킹으로 직접 유출되지는 않은 것으로 보고 있습니다. 이번 ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>노말틱 모의해킹 스터디 6주차 CTF 문제 (2)</title>
+    <link href="https://woojin03.github.io//posts/Penetration-Test-Study-6(2)/" rel="alternate" type="text/html" title="노말틱 모의해킹 스터디 6주차 CTF 문제 (2)" />
+    <published>2025-05-09T00:00:00+09:00</published>
+  
+    <updated>2025-05-09T00:00:00+09:00</updated>
+  
+    <id>https://woojin03.github.io//posts/Penetration-Test-Study-6(2)/</id>
+    <content type="text/html" src="https://woojin03.github.io//posts/Penetration-Test-Study-6(2)/" />
+    <author>
+      <name>leewoojin</name>
+    </author>
+
+  
+    
+    <category term="Pentest" />
+    
+    <category term="W6" />
+    
+  
+
+  <summary>🧪 시도 과정 및 풀이 🎯 시도 1 – 기본 검색 동작 확인 검색창에 normaltic을 입력한 결과, 정상적인 검색 결과 동작을 확인할 수 있었습니다.    🎯 시도 2 – &amp;#39; OR &amp;#39;1&amp;#39;=&amp;#39;1 입력 시 동작 실수로 SQL 주석(–)을 붙이지 않고 &amp;#39; OR &amp;#39;1&amp;#39;=&amp;#39;1 만 입력해봤더니  doldol의 계정에서  Info 부분에서 &amp;quot;my name is normaltic&amp;quot; 출력하는 것을 확인했습니다.    🎯 시도 2 – &amp;#39; OR &amp;#39;1&amp;#39;=&amp;#39;1--  주석 처리 후 입력 doldol의 원래 계정대로 출력되는 것을 확인할 수 있었습니다.    🎯 시도 3 – &amp;#39; order by 7--  컬럼이 6개라는 것을 확인  doldol’ UNION SELECT 1,2,3,4,5,6–    doldol’ and ‘1’ ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>노말틱 모의해킹 스터디 6주차 CTF 문제 (1)</title>
+    <link href="https://woojin03.github.io//posts/Penetration-Test-Study-6(1)/" rel="alternate" type="text/html" title="노말틱 모의해킹 스터디 6주차 CTF 문제 (1)" />
     <published>2025-05-09T00:00:00+09:00</published>
   
     <updated>2025-05-09T00:00:00+09:00</updated>
@@ -29,10 +107,14 @@
     <id>https://woojin03.github.io//posts/Penetration-Test-Study-6(1)/</id>
     <content type="text/html" src="https://woojin03.github.io//posts/Penetration-Test-Study-6(1)/" />
     <author>
-      <name>woojin</name>
+      <name>leewoojin</name>
     </author>
 
   
+    
+    <category term="Pentest" />
+    
+    <category term="W6" />
     
   
 
@@ -63,84 +145,6 @@
   
 
   <summary>1. 파일 다운로드  개인 컴퓨터 사양에 맞는 파일을 아래 사이트에서 다운로드합니다.  🔗 https://ollama.com/download    2. 다운로드한 파일 실행  설치 파일을 실행하면 아래와 같은 화면이 순서대로 나타납니다.                                        3. LLaMA3 모델 실행  설치가 완료되면, 터미널에서 아래 명령어를 복사하여 붙여넣고 실행합니다: ollama run llama3     llama3.2와 같은 최신 버전 사용을 권장하지만, 저는 추후 Google Colab과 연동할 계획이 있어 기본 llama3 모델을 설치해 사용했습니다.</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>모의해킹 스터디 5주차 CTF 문제 분석 및 구현</title>
-    <link href="https://woojin03.github.io//posts/Penetration-Test-Study-5(2)/" rel="alternate" type="text/html" title="모의해킹 스터디 5주차 CTF 문제 분석 및 구현" />
-    <published>2025-05-06T00:00:00+09:00</published>
-  
-    <updated>2025-05-06T00:00:00+09:00</updated>
-  
-    <id>https://woojin03.github.io//posts/Penetration-Test-Study-5(2)/</id>
-    <content type="text/html" src="https://woojin03.github.io//posts/Penetration-Test-Study-5(2)/" />
-    <author>
-      <name>leewoojin</name>
-    </author>
-
-  
-    
-    <category term="Pentest" />
-    
-    <category term="W5" />
-    
-  
-
-  <summary>⚠️ 본 실습 콘텐츠는 노말틱님의 해킹 스터디 CTF 문제를 기반으로 재구성하였으며, 학습 및 교육 목적에 한해 사용됩니다.   이번 글에서는 해당 문제를 분석하고, 동일한 취약점을 활용한 CTF 문제를 직접 구현해 봄으로써, SQL Injection이 로그인 로직에 어떻게 적용되고 동작하는지를 내부 구조 수준에서 심층적으로 이해하고자 합니다.  이 글은 총 3일에 걸쳐 작업한 내용을 기반으로 정리되었습니다.  📥 문제 다운로드 안내 문제 실행 및 설치 방법은 아래 GitHub 저장소의 README.md 파일에 정리되어 있습니다:  👉 https://github.com/woojin03/normaltic-penstudy/tree/ctf  메인 페이지  1~3주차 학습 내용을 기반으로, ChatGPT와 함...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>모의해킹 스터디 5주차 CTF 문제 풀기</title>
-    <link href="https://woojin03.github.io//posts/Penetration-Test-Study-5(1)/" rel="alternate" type="text/html" title="모의해킹 스터디 5주차 CTF 문제 풀기" />
-    <published>2025-05-03T00:00:00+09:00</published>
-  
-    <updated>2025-05-03T00:00:00+09:00</updated>
-  
-    <id>https://woojin03.github.io//posts/Penetration-Test-Study-5(1)/</id>
-    <content type="text/html" src="https://woojin03.github.io//posts/Penetration-Test-Study-5(1)/" />
-    <author>
-      <name>leewoojin</name>
-    </author>
-
-  
-    
-    <category term="Pentest" />
-    
-    <category term="W5" />
-    
-  
-
-  <summary>과제 1. 오늘 배운거 복습 하기 (로그인 우회, 세션 탈취 등) 2. 인증 우회 실습 문제 풀기 (라이트업) + 문제와 비슷한 환경 구성해보기    CTF Login Bypass 1  해당 페이지에 들어가 보면 일반 로그인 화면과 유사하게 생긴 것을 확인할 수 있습니다. 강의와 같이 다음과 같은 인젝션을 사용하여 로그인 우회가 가능했습니다      Login Bypass 2     왜 or은 실패했는데 #은 성공했는가?     🔎 SQL 쿼리 구조에 따른 차이  ✅ doldol&amp;#39; or &amp;#39;1&amp;#39;=&amp;#39;1 이 성공하는 경우  # 인증 / 식별이 분리해서 처리하는 쿼리 $sql = &amp;quot;SELECT * FROM users WHERE username = &amp;#39;$id&amp;#39;&amp;quot;;      이 구조에서는 사용자 존재 여부만 확인하...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>모의해킹 스터디 5주차 SQLi 학습</title>
-    <link href="https://woojin03.github.io//posts/Penetration-Test-Study-5(3)/" rel="alternate" type="text/html" title="모의해킹 스터디 5주차 SQLi 학습" />
-    <published>2025-04-30T00:00:00+09:00</published>
-  
-    <updated>2025-04-30T00:00:00+09:00</updated>
-  
-    <id>https://woojin03.github.io//posts/Penetration-Test-Study-5(3)/</id>
-    <content type="text/html" src="https://woojin03.github.io//posts/Penetration-Test-Study-5(3)/" />
-    <author>
-      <name>leewoojin</name>
-    </author>
-
-  
-    
-    <category term="Pentest" />
-    
-    <category term="W4" />
-    
-  
-
-  <summary>이 포스팅은 PortSwigger Web Security Academy의 SQL Injection 학습 경로를 기반으로 작성되었습니다.   SQL 인젝션(SQLi)이란?     SQL 인젝션은 웹 보안 취약점으로, 공격자가 데이터베이스 쿼리를 방해하여 사용자 데이터를 접근하거나 수정할 수 있는 방법입니다.   공격자는 SQL 쿼리를 조작하여 모든 제품을 표시하거나 비밀번호 검사를 우회하여 다른 계정에 로그인할 수 있습니다.   SQL 인젝션 취약점을 탐지하기 위해 데이터베이스 정보를 수집하고, 블라인드 SQL 인젝션과 같은 복잡한 접근 방법이 필요합니다.   이를 예방하기 위해서는 매개변수화된 쿼리를 사용하여 사용자 입력이 쿼리 구조에 영향을 미치지 않도록 해야 합니다.   SQL 주입 취약점은 어떻게...</summary>
 
   </entry>
 
