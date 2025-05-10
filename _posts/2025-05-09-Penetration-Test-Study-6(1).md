@@ -1,3 +1,12 @@
+---
+layout: post
+title:  노말틱 모의해킹 스터디 6주차 CTF 문제 (1)
+author: leewoojin
+date: 2025-05-09 00:00:00 +0900
+categories: [Pentest, W6]
+tags: []
+---
+
 해당 문제는 게시판의 `search` 파라미터에서 SQL Injection을 통해 **숨겨진 데이터(flag)** 를 추출하는 문제였습니다.
 
 사전에 [PortSwigger Labs](https://portswigger.net/web-security/sql-injection)에서 SQLi를 학습했기 때문에 쉽게 접근할 수 있을 줄 알았는데, 생각보다 고전했습니다.  
