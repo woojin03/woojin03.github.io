@@ -129,3 +129,5 @@ MySQL 기준으로 `LIMIT a, b`는 다음을 의미합니다:
 | `LIMIT n`                         | 상위 n개 행만 출력           | `LIMIT 10` → 상위 10개 |
 | `OFFSET n`                        | (PostgreSQL에서) n개 건너뜀 | `OFFSET 3 LIMIT 1`  |
 | `WHERE id = (SELECT MIN(id) ...)` | 첫 번째 값 찾기             | 단일 행 정렬 불가능할 때      |
+
+

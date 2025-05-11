@@ -8,7 +8,7 @@ tags: [SIM Swapping, SKT, 모바일보안, 사회공학, 포렌식, 유심, 통�
 ---
 
 참고 영상 : https://www.youtube.com/watch?v=lyrAhNFDH3w <br>
-참고 사이트 : https://www.boannews.com/media/view.asp?idx=137098&kind=1
+참고 사이트 :https://www.boannews.com/media/view.asp?idx=137098&kind=1
 
 ## [ SKT 해킹 사태 ]
 
