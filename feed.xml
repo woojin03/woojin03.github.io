@@ -4,7 +4,7 @@
   <id>https://woojin03.github.io//</id>
   <title>woojin</title>
   <subtitle>디지털 포렌식과 모의해킹을 중심으로, 보안 분야의 다양한 경험을 차곡차곡 쌓아가는 블로그입니다.</subtitle>
-  <updated>2025-05-11T00:33:33+09:00</updated>
+  <updated>2025-05-11T16:34:53+09:00</updated>
   <author>
     <name>woojin</name>
     <uri>https://woojin03.github.io//</uri>
@@ -17,6 +17,58 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>노말틱 모의해킹 스터디 6주차 CTF 문제 (2)</title>
+    <link href="https://woojin03.github.io//posts/SQLD(2)/" rel="alternate" type="text/html" title="노말틱 모의해킹 스터디 6주차 CTF 문제 (2)" />
+    <published>2025-05-09T00:00:00+09:00</published>
+  
+    <updated>2025-05-09T00:00:00+09:00</updated>
+  
+    <id>https://woojin03.github.io//posts/SQLD(2)/</id>
+    <content type="text/html" src="https://woojin03.github.io//posts/SQLD(2)/" />
+    <author>
+      <name>leewoojin</name>
+    </author>
+
+  
+    
+    <category term="자격증" />
+    
+    <category term="SQLD" />
+    
+  
+
+  <summary>1과목 다 맞아야 60점으로 시험 통과하는 건데… 그래도 어제보단 성장했다 ㅎ  1과목  3번 문제 다음은 도메인에 대한 설명이다. 특징으로 알맞지 않은 것은?  ① 속성을 명사로 분리한다. ② 공통으로 발생하는 명사는 여러 개의 도메인으로 생성한다. ③ 각 엔터티 속성에 도메인을 할당한다. ④ 도메인별로 데이터 타입과 길이를 지정한다.     ✅ 정답     **정답: ②**    공통 명사는 **하나의 도메인으로 정의하여 재사용**하는 것이 원칙입니다.     여러 개로 나누면 일관성이 떨어지고 유지보수가 어려워집니다.   도메인 정의의 핵심 특징                 항목       설명                       속성 분리       속성은 명사형으로 구분하며, 의미를 명확하...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>노말틱 모의해킹 스터디 6주차 강의 정리</title>
+    <link href="https://woojin03.github.io//posts/Penetration-Test-Study-6(3)/" rel="alternate" type="text/html" title="노말틱 모의해킹 스터디 6주차 강의 정리" />
+    <published>2025-05-09T00:00:00+09:00</published>
+  
+    <updated>2025-05-09T00:00:00+09:00</updated>
+  
+    <id>https://woojin03.github.io//posts/Penetration-Test-Study-6(3)/</id>
+    <content type="text/html" src="https://woojin03.github.io//posts/Penetration-Test-Study-6(3)/" />
+    <author>
+      <name>leewoojin</name>
+    </author>
+
+  
+    
+    <category term="Pentest" />
+    
+    <category term="W6" />
+    
+  
+
+  <summary>고민 방식     문제 발생 시!      문제의 원인을 찾아라.   문제를 해결하라.   구글 검색은 영어 기반!            ❌ google.kr       ✅ google.com           SQL 인젝션은 어디에 사용되는가?     DB 데이터를 사용하는 곳   그 데이터가 화면에 출력되는가?                  구분       예시                       출력됨       게시판                 출력 안됨       로그인           -- 로그인 예시 SELECT * FROM member WHERE id = &amp;#39;normaltic&amp;#39; AND pass = &amp;#39;1234&amp;#39; -- SQLi 예시 &amp;#39; OR &amp;#39;1&amp;#39;=&amp;#39;1&amp;#39;   주요 SQL 요소 정리  🔹 ...</summary>
+
+  </entry>
 
   
   <entry>
@@ -66,7 +118,7 @@
     
   
 
-  <summary>참고 영상 : https://www.youtube.com/watch?v=lyrAhNFDH3w  참고 사이트 : https://www.boannews.com/media/view.asp?idx=137098&amp;amp;amp;kind=1  [ SKT 해킹 사태 ]  2025년 4월 19일, SK텔레콤의 내부 시스템이 해커의 악성코드 공격을 받아 약 2,500만 명에 달하는 가입자의 유심(USIM) 관련 정보 일부가 유출되는 대규모 해킹 사고가 발생했습니다.    유출된 정보는 유심(USIM) 관련 데이터로, 정확한 항목과 범위는 조사 중입니다. SK텔레콤 측은 주민등록번호, 생년월일, 결제 계좌번호 등 주요 개인정보는 별도의 시스템에 분산 보관되어 있어 이번 해킹으로 직접 유출되지는 않은 것으로 보고 있습니다. 이번 ...</summary>
+  <summary>참고 영상 : https://www.youtube.com/watch?v=lyrAhNFDH3w  참고 사이트 :https://www.boannews.com/media/view.asp?idx=137098&amp;amp;amp;kind=1  [ SKT 해킹 사태 ]  2025년 4월 19일, SK텔레콤의 내부 시스템이 해커의 악성코드 공격을 받아 약 2,500만 명에 달하는 가입자의 유심(USIM) 관련 정보 일부가 유출되는 대규모 해킹 사고가 발생했습니다.    유출된 정보는 유심(USIM) 관련 데이터로, 정확한 항목과 범위는 조사 중입니다. SK텔레콤 측은 주민등록번호, 생년월일, 결제 계좌번호 등 주요 개인정보는 별도의 시스템에 분산 보관되어 있어 이번 해킹으로 직접 유출되지는 않은 것으로 보고 있습니다. 이번 사...</summary>
 
   </entry>
 
@@ -93,58 +145,6 @@
   
 
   <summary>검색창에 normaltic을 입력한 결과, 정상적인 검색 결과 동작을 확인할 수 있었습니다.    실수로 SQL 주석(–)을 붙이지 않고 &amp;#39; OR &amp;#39;1&amp;#39;=&amp;#39;1 만 입력해봤더니  doldol의 계정에서  Info 부분에서 &amp;quot;my name is normaltic&amp;quot; 출력하는 것을 확인했습니다.    &amp;#39; OR &amp;#39;1&amp;#39;=&amp;#39;1--   입력해봤더니 doldol의 원래 계정대로 출력되는 것을 확인할 수 있었습니다.    doldol&amp;#39; UNION SELECT 1,2,3,4,5,6-- 를 입력하여 컬럼이 6개라는 것을 확인했습니다.    doldol&amp;#39; and &amp;#39;1&amp;#39; =&amp;#39;0&amp;#39; UNION SELECT 1,2,3,4,5,6--  Info부분에 6이 찍히는 것을 확인할 수 있습니다.    doldol&amp;#39; and &amp;#39;1&amp;#39; =&amp;#39;0&amp;#39; U...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>노말틱 모의해킹 스터디 6주차 CTF 문제 (1)</title>
-    <link href="https://woojin03.github.io//posts/Penetration-Test-Study-6(1)/" rel="alternate" type="text/html" title="노말틱 모의해킹 스터디 6주차 CTF 문제 (1)" />
-    <published>2025-05-09T00:00:00+09:00</published>
-  
-    <updated>2025-05-09T00:00:00+09:00</updated>
-  
-    <id>https://woojin03.github.io//posts/Penetration-Test-Study-6(1)/</id>
-    <content type="text/html" src="https://woojin03.github.io//posts/Penetration-Test-Study-6(1)/" />
-    <author>
-      <name>leewoojin</name>
-    </author>
-
-  
-    
-    <category term="Pentest" />
-    
-    <category term="W6" />
-    
-  
-
-  <summary>해당 문제는 게시판의 search 파라미터에서 SQL Injection을 통해 숨겨진 데이터(flag) 를 추출하는 문제였습니다.  사전에 PortSwigger Labs에서 SQLi를 학습했기 때문에 쉽게 접근할 수 있을 줄 알았는데, 생각보다 고전했습니다.    🧪 시도 과정 및 풀이  🎯 시도 1 – SQL Injection이 가능한가? normaltic&amp;#39; OR &amp;#39;1&amp;#39;=&amp;#39;1--    ✅ SQL 인젝션 성공 확인    🎯 시도 2 – 컬럼 수 확인 normaltic&amp;#39; ORDER BY 1 --    ✅ 성공   normaltic&amp;#39; ORDER BY 5 --    ❌ 실패  ✅ 컬럼 수는 4개로 추정됨  🎯 시도 3 – 출력 컬럼 식별 normaltic&amp;#39; UNION SELECT 1,2,3,4 --   ✅ ...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>LLaMA3 기반 디지털포렌식 아티팩트 분석기 개발 (1)</title>
-    <link href="https://woojin03.github.io//posts/llama3_digital_forensics(1)/" rel="alternate" type="text/html" title="LLaMA3 기반 디지털포렌식 아티팩트 분석기 개발 (1)" />
-    <published>2025-05-07T00:00:00+09:00</published>
-  
-    <updated>2025-05-07T00:00:00+09:00</updated>
-  
-    <id>https://woojin03.github.io//posts/llama3_digital_forensics(1)/</id>
-    <content type="text/html" src="https://woojin03.github.io//posts/llama3_digital_forensics(1)/" />
-    <author>
-      <name>leewoojin</name>
-    </author>
-
-  
-    
-    <category term="Forensics" />
-    
-    <category term="LLaMA3" />
-    
-  
-
-  <summary>1. 파일 다운로드  개인 컴퓨터 사양에 맞는 파일을 아래 사이트에서 다운로드합니다.  🔗 https://ollama.com/download    2. 다운로드한 파일 실행  설치 파일을 실행하면 아래와 같은 화면이 순서대로 나타납니다.                                        3. LLaMA3 모델 실행  설치가 완료되면, 터미널에서 아래 명령어를 복사하여 붙여넣고 실행합니다: ollama run llama3     llama3.2와 같은 최신 버전 사용을 권장하지만, 저는 추후 Google Colab과 연동할 계획이 있어 기본 llama3 모델을 설치해 사용했습니다.</summary>
 
   </entry>
 
