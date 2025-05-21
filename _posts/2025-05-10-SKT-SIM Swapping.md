@@ -2,8 +2,8 @@
 layout: post
 title: "SKT 유심 해킹 사고와 SIM 스와핑 대응 전략"
 author: leewoojin
-date: 2025-05-09 00:00:00 +0900
-categories: [보안분석, 모바일포렌식]
+date: 2025-05-10 00:00:00 +0900
+categories: [news, 디지털포렌식]
 tags: [SIM Swapping, SKT, 모바일보안, 사회공학, 포렌식, 유심, 통신사취약점]
 ---
 

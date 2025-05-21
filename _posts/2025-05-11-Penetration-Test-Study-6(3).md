@@ -2,7 +2,7 @@
 layout: post
 title:  노말틱 모의해킹 스터디 6주차 강의 정리 
 author: leewoojin
-date: 2025-05-09 00:00:00 +0900
+date: 2025-05-11 00:00:00 +0900
 categories: [Pentest, W6]
 tags: []
 ---
