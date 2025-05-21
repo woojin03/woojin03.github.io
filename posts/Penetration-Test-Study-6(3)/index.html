@@ -39,11 +39,11 @@
 <meta property="og:url" content="https://woojin03.github.io//posts/Penetration-Test-Study-6(3)/" />
 <meta property="og:site_name" content="woojin" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-05-09T00:00:00+09:00" />
+<meta property="article:published_time" content="2025-05-11T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="노말틱 모의해킹 스터디 6주차 강의 정리" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"leewoojin","url":"https://github.com/woojin03"},"dateModified":"2025-05-09T00:00:00+09:00","datePublished":"2025-05-09T00:00:00+09:00","description":"고민 방식","headline":"노말틱 모의해킹 스터디 6주차 강의 정리","mainEntityOfPage":{"@type":"WebPage","@id":"https://woojin03.github.io//posts/Penetration-Test-Study-6(3)/"},"url":"https://woojin03.github.io//posts/Penetration-Test-Study-6(3)/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"leewoojin","url":"https://github.com/woojin03"},"dateModified":"2025-05-11T00:00:00+09:00","datePublished":"2025-05-11T00:00:00+09:00","description":"고민 방식","headline":"노말틱 모의해킹 스터디 6주차 강의 정리","mainEntityOfPage":{"@type":"WebPage","@id":"https://woojin03.github.io//posts/Penetration-Test-Study-6(3)/"},"url":"https://woojin03.github.io//posts/Penetration-Test-Study-6(3)/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -591,13 +591,13 @@
 
 <time
   
-  data-ts="1746716400"
+  data-ts="1746889200"
   data-df="YYYY/MM/DD"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  09/05/2025
+  11/05/2025
 </time>
 
       </span>
@@ -961,14 +961,21 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Penetration-Test-Study-6(1)/">노말틱 모의해킹 스터디 6주차 CTF 문제 (1)</a>
+          <a href="/posts/Penetration-Test-Study-6(7)/">노말틱 모의해킹 스터디 6주차 워게임 (7) 보안 커뮤니티</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/Penetration-Test-Study-6(2)/">노말틱 모의해킹 스터디 6주차 CTF 문제 (2)</a>
+          <a href="/posts/Penetration-Test-Study-6(4)/">노말틱 모의해킹 스터디 6주차 워게임_보너스</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/Penetration-Test-Study-6(3)/">노말틱 모의해킹 스터디 6주차 강의 정리</a>
         </li>
       
         
@@ -982,14 +989,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/SQLD(1)/">SQLD 자격증 준비 (1일차)</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/Penetration-Test-Study-6(3)/">노말틱 모의해킹 스터디 6주차 강의 정리</a>
+          <a href="/posts/Penetration-Test-Study-6(1)/">노말틱 모의해킹 스터디 6주차 워게임 (1) sqli1, sql2</a>
         </li>
       
     </ul>
@@ -1560,19 +1560,31 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -1588,7 +1600,7 @@
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/Penetration-Test-Study-6(2)/" class="post-preview card h-100">
+          <a href="/posts/Penetration-Test-Study-6(7)/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1600,16 +1612,44 @@
 
 <time
   
-  data-ts="1746716400"
+  data-ts="1747666800"
   data-df="YYYY/MM/DD"
   
 >
-  09/05/2025
+  20/05/2025
 </time>
 
-              <h4 class="pt-0 my-2">노말틱 모의해킹 스터디 6주차 CTF 문제 (2)</h4>
+              <h4 class="pt-0 my-2">노말틱 모의해킹 스터디 6주차 워게임 (7) 보안 커뮤니티</h4>
               <div class="text-muted">
-                <p>검색창에 normaltic을 입력한 결과, 정상적인 검색 결과 동작을 확인할 수 있었습니다.    실수로 SQL 주석(–)을 붙이지 않고 &#39; OR &#39;1&#39;=&#39;1 만 입력해봤더니  doldol의 계정에서  Info 부분에서 &quot;my name is normaltic&quot; 출력하는 것을 확인했습니다.    &#39; OR &#39;1&#39;=&#39;1--   입력해봤더니 doldol의 원...</p>
+                <p>sqli 성공 여부 sql%’and’1%’=’1/ sq%’and’1%’=’2 를 비교해보면 sqli 성공하는 것을 알수있습니다. 1 2 [공격 페이로드 ] sql%&#39;and(공격문)and&#39;1%&#39;=&#39;1  db명 추출 sql%’and(ascii(substr((select+database()),1,1))&amp;gt;0)and’1%’=’1  1 2 3 4 5 6 7...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/Penetration-Test-Study-6(4)/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1747062000"
+  data-df="YYYY/MM/DD"
+  
+>
+  13/05/2025
+</time>
+
+              <h4 class="pt-0 my-2">노말틱 모의해킹 스터디 6주차 워게임_보너스</h4>
+              <div class="text-muted">
+                <p>[도박 관리자] 문제에 들어가면 아래와 같은 웹페이지를 확인할 수 있습니다.    웹페이지 url 에서 확인은 못하지만 아래와 같은 경로가 출력되는 것을 알 수 있습니다. 1 GET /spec1/game_info.php?game_name=Lucky%20Slots HTTP/1.1    버프에서 확인한 경로를 url로 입력하면 json 데이터를 확인 할 ...</p>
               </div>
             </div>
           </a>
@@ -1635,37 +1675,9 @@
   09/05/2025
 </time>
 
-              <h4 class="pt-0 my-2">노말틱 모의해킹 스터디 6주차 CTF 문제 (1)</h4>
+              <h4 class="pt-0 my-2">노말틱 모의해킹 스터디 6주차 워게임 (1) sqli1, sql2</h4>
               <div class="text-muted">
                 <p>해당 문제는 게시판의 search 파라미터에서 SQL Injection을 통해 숨겨진 데이터(flag) 를 추출하는 문제였습니다.  사전에 PortSwigger Labs에서 SQLi를 학습했기 때문에 쉽게 접근할 수 있을 줄 알았는데, 생각보다 고전했습니다.    🧪 시도 과정 및 풀이  🎯 시도 1 – SQL Injection이 가능한가? norma...</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/Penetration-Test-Study-5(2)/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1746457200"
-  data-df="YYYY/MM/DD"
-  
->
-  06/05/2025
-</time>
-
-              <h4 class="pt-0 my-2">모의해킹 스터디 5주차 CTF 문제 분석 및 구현</h4>
-              <div class="text-muted">
-                <p>⚠️ 본 실습 콘텐츠는 노말틱님의 해킹 스터디 CTF 문제를 기반으로 재구성하였으며, 학습 및 교육 목적에 한해 사용됩니다.   이번 글에서는 해당 문제를 분석하고, 동일한 취약점을 활용한 CTF 문제를 직접 구현해 봄으로써, SQL Injection이 로그인 로직에 어떻게 적용되고 동작하는지를 내부 구조 수준에서 심층적으로 이해하고자 합니다.  이 ...</p>
               </div>
             </div>
           </a>
@@ -1686,21 +1698,21 @@
 
   
     <a
-      href="/posts/SQLD(1)/"
+      href="/posts/SKT-SIM-Swapping/"
       class="btn btn-outline-primary"
       aria-label="이전 글"
     >
-      <p>SQLD 자격증 준비 (1일차)</p>
+      <p>SKT 유심 해킹 사고와 SIM 스와핑 대응 전략</p>
     </a>
   
 
   
     <a
-      href="/posts/SQLD(2)/"
+      href="/posts/Penetration-Test-Study-6(4)/"
       class="btn btn-outline-primary"
       aria-label="다음 글"
     >
-      <p>SQLD 자격증 준비 (2일차)</p>
+      <p>노말틱 모의해킹 스터디 6주차 워게임_보너스</p>
     </a>
   
 </nav>
