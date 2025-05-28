@@ -1,5 +1,13 @@
 [
   {
+    "title": "노말틱 모의해킹 스터디 7주차 강의 정리 Error Based SQLi, Blind SQLi",
+    "url": "/posts/Penetration-Test-Study-7(1)/",
+    "categories": "Pentest, W6",
+    "tags": "",
+    "date": "2025-05-23 00:00:00 +0900",
+    "content": "Error Base SQL Injecton  1) SQL 질의가 결과가 화면에 출력된다 - union sqli  2) Eroor 출력될 때 -&amp;gt; Error Based SQL injection    에러 메시지르 활용 해서 데이터를 출력            로직 에러  SQL 에러           문법 에러 -&amp;gt; 쓸모가 없다   Error ..."
+  },
+  {
     "title": "노말틱 모의해킹 스터디 6주차 워게임 (7) 보안 커뮤니티",
     "url": "/posts/Penetration-Test-Study-6(7)/",
     "categories": "Pentest, W6",

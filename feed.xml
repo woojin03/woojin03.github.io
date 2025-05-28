@@ -4,7 +4,7 @@
   <id>https://woojin03.github.io//</id>
   <title>woojin</title>
   <subtitle>디지털 포렌식과 모의해킹을 중심으로, 보안 분야의 다양한 경험을 차곡차곡 쌓아가는 블로그입니다.</subtitle>
-  <updated>2025-05-21T20:28:23+09:00</updated>
+  <updated>2025-05-28T13:49:19+09:00</updated>
   <author>
     <name>woojin</name>
     <uri>https://woojin03.github.io//</uri>
@@ -17,6 +17,32 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>노말틱 모의해킹 스터디 7주차 강의 정리 Error Based SQLi, Blind SQLi</title>
+    <link href="https://woojin03.github.io//posts/Penetration-Test-Study-7(1)/" rel="alternate" type="text/html" title="노말틱 모의해킹 스터디 7주차 강의 정리 Error Based SQLi, Blind SQLi" />
+    <published>2025-05-23T00:00:00+09:00</published>
+  
+    <updated>2025-05-23T00:00:00+09:00</updated>
+  
+    <id>https://woojin03.github.io//posts/Penetration-Test-Study-7(1)/</id>
+    <content type="text/html" src="https://woojin03.github.io//posts/Penetration-Test-Study-7(1)/" />
+    <author>
+      <name>leewoojin</name>
+    </author>
+
+  
+    
+    <category term="Pentest" />
+    
+    <category term="W6" />
+    
+  
+
+  <summary>Error Base SQL Injecton  1) SQL 질의가 결과가 화면에 출력된다 - union sqli  2) Eroor 출력될 때 -&amp;amp;gt; Error Based SQL injection    에러 메시지르 활용 해서 데이터를 출력            로직 에러  SQL 에러           문법 에러 -&amp;amp;gt; 쓸모가 없다   Error Based SQL injection (ID 중복 검사 ) `normaltic and extractvalue(‘1’, ‘:normaltic’)’ and ‘1’=’1  extracvalue(1,2)  normaltic’ and extractvalue (‘1’, concat (0x3a, (select ‘normatltic’))) and ‘1’= ‘1  conca...</summary>
+
+  </entry>
 
   
   <entry>
@@ -119,34 +145,6 @@
   
 
   <summary>참고 영상 : https://www.youtube.com/watch?v=lyrAhNFDH3w  참고 사이트 :https://www.boannews.com/media/view.asp?idx=137098&amp;amp;amp;kind=1  [ SKT 해킹 사태 ]  2025년 4월 19일, SK텔레콤의 내부 시스템이 해커의 악성코드 공격을 받아 약 2,500만 명에 달하는 가입자의 유심(USIM) 관련 정보 일부가 유출되는 대규모 해킹 사고가 발생했습니다.    유출된 정보는 유심(USIM) 관련 데이터로, 정확한 항목과 범위는 조사 중입니다. SK텔레콤 측은 주민등록번호, 생년월일, 결제 계좌번호 등 주요 개인정보는 별도의 시스템에 분산 보관되어 있어 이번 해킹으로 직접 유출되지는 않은 것으로 보고 있습니다. 이번 사...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>SQLD 자격증 준비 (2일차)</title>
-    <link href="https://woojin03.github.io//posts/suninatas(1)/" rel="alternate" type="text/html" title="SQLD 자격증 준비 (2일차)" />
-    <published>2025-05-09T00:00:00+09:00</published>
-  
-    <updated>2025-05-09T00:00:00+09:00</updated>
-  
-    <id>https://woojin03.github.io//posts/suninatas(1)/</id>
-    <content type="text/html" src="https://woojin03.github.io//posts/suninatas(1)/" />
-    <author>
-      <name>leewoojin</name>
-    </author>
-
-  
-    
-    <category term="ctf" />
-    
-    <category term="suninatas" />
-    
-    <category term="web" />
-    
-  
-
-  <summary>웹해킹 1번 문제    | 단계 | 설명 | |——|——| | 1 | 사용자 입력 문자열에서 &amp;quot;a&amp;quot; → &amp;quot;aad&amp;quot;로 치환 | | 2 | 그 결과에서 &amp;quot;i&amp;quot; → &amp;quot;in&amp;quot;으로 치환 | | 3 | Mid(result, 2, 2) + Mid(result, 4, 6) 추출 | | 4 | result = result1 &amp;amp;amp; result2 | | 5 | 최종 result == &amp;quot;admin&amp;quot;이면 성공 | —  웹해킹 2번 문제    로그인 로직을 알아보기 위해서 버프스위트를 켜서 id = admin / pw = 1234 을 넣고 확인해보면 Auth : ??? 와 Hint : Join / id = pw라고 적혀있는걸 확인 그래서 id = admin / pw = admin 넣어보니 성공!  웹해킹 3번 문제    ...</summary>
 
   </entry>
 
