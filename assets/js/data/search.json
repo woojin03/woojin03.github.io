@@ -1,8 +1,24 @@
 [
   {
+    "title": "노말틱 모의해킹 스터디 8주차 강의 정리",
+    "url": "/posts/Penetration-Test-Study-8(1)/",
+    "categories": "Pentest, W8",
+    "tags": "",
+    "date": "2025-05-28 00:00:00 +0900",
+    "content": "SQL Injection : DATA 추출  우리가 원하는 select 문을 실행하는 것!    Union : SQL 질의 결과가 화면에 출력되는 경우   Error Based : SQL 에러가 발생하는 경우   Blind : 만능   SQL Injection Point 찾기     DB에게 SQL 질의문을 사용하는 곳   파라미터   예) where..."
+  },
+  {
+    "title": "노말틱 모의해킹 스터디 7주차 워게임 정리",
+    "url": "/posts/Penetration-Test-Study-7(2)/",
+    "categories": "Pentest, W7",
+    "tags": "",
+    "date": "2025-05-28 00:00:00 +0900",
+    "content": "SQL Injection 3 문제 이 세상은 에러 천지야.. ㅠㅜ  flag를 찾아주세요.!  계정 : normaltic / 1234    1. DB 에러 메시지 유도 Could not update data: You have an error in your SQL syntax; check the manual that corresponds to your ..."
+  },
+  {
     "title": "노말틱 모의해킹 스터디 7주차 강의 정리 Error Based SQLi, Blind SQLi",
     "url": "/posts/Penetration-Test-Study-7(1)/",
-    "categories": "Pentest, W6",
+    "categories": "Pentest, W7",
     "tags": "",
     "date": "2025-05-23 00:00:00 +0900",
     "content": "Error Base SQL Injecton  1) SQL 질의가 결과가 화면에 출력된다 - union sqli  2) Eroor 출력될 때 -&amp;gt; Error Based SQL injection    에러 메시지르 활용 해서 데이터를 출력            로직 에러  SQL 에러           문법 에러 -&amp;gt; 쓸모가 없다   Error ..."
