@@ -3,7 +3,7 @@ layout: post
 title:  노말틱 모의해킹 스터디 7주차 강의 정리 Error Based SQLi, Blind SQLi
 author: leewoojin
 date: 2025-05-23 00:00:00 +0900
-categories: [Pentest, W6]
+categories: [Pentest, W7]
 tags: []
 ---
 
