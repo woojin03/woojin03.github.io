@@ -115,7 +115,7 @@
     <!-- Web Analytics -->
     {% for analytics in site.analytics %}
       {% capture str %}{{ analytics }}{% endcapture %}
-      {% assign platform = str | split: '{' | first %}
+      {% assign platform = str | split: '{' | first %}}
       {% if site.analytics[platform].id and site.analytics[platform].id != empty %}
         {% include analytics/{{ platform }}.html %}
       {% endif %}
@@ -123,4 +123,15 @@
   {% endif %}
 
   {% include metadata-hook.html %}
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NP6F875JDN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NP6F875JDN');
+  </script>
 </head>
+
+
