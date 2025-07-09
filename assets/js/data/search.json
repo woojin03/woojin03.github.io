@@ -56,28 +56,12 @@
     "content": "참고 영상 : https://www.youtube.com/watch?v=lyrAhNFDH3w  참고 사이트 :https://www.boannews.com/media/view.asp?idx=137098&amp;amp;kind=1  [ SKT 해킹 사태 ]  2025년 4월 19일, SK텔레콤의 내부 시스템이 해커의 악성코드 공격을 받아 약 2,500만 명에 달..."
   },
   {
-    "title": "SQLD 자격증 준비 (2일차)",
-    "url": "/posts/suninatas(1)/",
-    "categories": "ctf, suninatas, web",
-    "tags": "",
-    "date": "2025-05-09 00:00:00 +0900",
-    "content": "웹해킹 1번 문제    | 단계 | 설명 | |——|——| | 1 | 사용자 입력 문자열에서 &quot;a&quot; → &quot;aad&quot;로 치환 | | 2 | 그 결과에서 &quot;i&quot; → &quot;in&quot;으로 치환 | | 3 | Mid(result, 2, 2) + Mid(result, 4, 6) 추출 | | 4 | result = result1 &amp;amp; result2 | | 5 | 최종..."
-  },
-  {
     "title": "노말틱 모의해킹 스터디 6주차 워게임 (1) sqli1, sql2",
     "url": "/posts/Penetration-Test-Study-6(1)/",
     "categories": "Pentest, W6",
     "tags": "",
     "date": "2025-05-09 00:00:00 +0900",
     "content": "해당 문제는 게시판의 search 파라미터에서 SQL Injection을 통해 숨겨진 데이터(flag) 를 추출하는 문제였습니다.  사전에 PortSwigger Labs에서 SQLi를 학습했기 때문에 쉽게 접근할 수 있을 줄 알았는데, 생각보다 고전했습니다.    🧪 시도 과정 및 풀이  🎯 시도 1 – SQL Injection이 가능한가? norma..."
-  },
-  {
-    "title": "LLaMA3 기반 디지털포렌식 아티팩트 분석기 개발 (1)",
-    "url": "/posts/llama3_digital_forensics(1)/",
-    "categories": "Forensics, LLaMA3",
-    "tags": "llm, llama3, forensic, automation, artifact",
-    "date": "2025-05-07 00:00:00 +0900",
-    "content": "1. 파일 다운로드  개인 컴퓨터 사양에 맞는 파일을 아래 사이트에서 다운로드합니다.  🔗 https://ollama.com/download    2. 다운로드한 파일 실행  설치 파일을 실행하면 아래와 같은 화면이 순서대로 나타납니다.                                        3. LLaMA3 모델 실행  설치가 완료되면..."
   },
   {
     "title": "모의해킹 스터디 5주차 CTF 문제 분석 및 구현",
@@ -110,14 +94,6 @@
     "tags": "board, sql, Pentest",
     "date": "2025-04-30 00:00:00 +0900",
     "content": "이번 주차에서는 1~3주차 동안 구현한 웹페이지에 게시판 기능을 추가해보겠습니다.  1.유저 게시판 테이블 설계  CREATE TABLE user_board (   id INT AUTO_INCREMENT PRIMARY KEY,   title VARCHAR(255) NOT NULL,   content TEXT NOT NULL,   author VARCH..."
-  },
-  {
-    "title": "GitHub Pages와 Jekyll로 깃허브 블로그 작성 방법",
-    "url": "/posts/github-blog-start/",
-    "categories": "Blogging, Tutorial",
-    "tags": "GitHub Pages, Jekyll, blog",
-    "date": "2025-04-29 20:00:00 +0900",
-    "content": "성실함을 기록으로 보여주기 위해, 기존에 사용하던 네이버 블로그를 정리하고 GitHub 블로그로 이전했습니다. 잔디 심기를 통해 하루하루의 노력을 쌓아가는 모습을 남기고자 합니다.  처음 구축하는 과정에서 쥔장이 직접 많이 헤맸던 부분들만 간단하게 정리해두었습니다.    1. 테마를 GitHub Fork 기능으로 가져옵니다.     GitHub에서 원..."
   }
   
 ]
