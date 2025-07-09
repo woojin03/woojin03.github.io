@@ -10,7 +10,7 @@ order: 4
 디지털 포렌식 분야 중 특히 모바일 포렌식과 데이터 복구에 깊은 관심을 가지고 있습니다. 
 
 
-<img width="714" height="417" alt="Image" src="https://github.com/user-attachments/assets/5e7df113-68be-4c3c-917d-94de0911b899" />
+![Image](https://github.com/user-attachments/assets/d6095ab3-36e1-48c4-9e82-07124ecb0cec)
 
 ---
 
